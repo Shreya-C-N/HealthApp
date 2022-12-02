@@ -1,0 +1,589 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Development),Custom field (Issue color),Custom field (Rank),Sprint,Custom field (Start date),Custom field (Story point estimate),Status Category
+Update doctor about patient's health,HEAT-24,10033,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,heena.kausar,638753b85fc160544e1c11ff,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:31,12/1/2022 12:06,12/1/2022 12:32,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance update doctor about patient details regularly.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance updates doctor about patient condition regularly
+
+ 
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff in the ambulance update doctor about patient details regularly.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0006n:,HEAT Sprint 4,,3,Done
+Update doctor about patient's health,HEAT-23,10032,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,heena.kausar,638753b85fc160544e1c11ff,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:30,12/1/2022 12:06,11/30/2022 20:59,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance update doctor about patient details regularly.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance updates doctor about patient condition regularly
+
+
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff in the ambulance update doctor about patient details regularly.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0005p:,HEAT Sprint 4,,3,Done
+Instructions from doctor,HEAT-22,10031,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shreya.CN,638753baf6c85b343c0b848d,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:27,12/1/2022 12:06,11/30/2022 20:48,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance receives instructions from doctor.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance receives instructions from the doctor and treats the patient accordingly.
+
+
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff receive instructions from doctor and treats the patient accordingly. ",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i00067:,HEAT Sprint 4,,3,Done
+Instructions from doctor,HEAT-21,10030,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shreya.CN,638753baf6c85b343c0b848d,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:25,12/1/2022 12:06,11/30/2022 20:43,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance receives instructions from doctor.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance receives instructions from the doctor and treats the patient accordingly.
+
+
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff receive instructions from doctor and treats the patient accordingly. ",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0005n:,HEAT Sprint 4,,3,Done
+Patient details from ambulance,HEAT-20,10029,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:25,12/1/2022 12:06,11/30/2022 20:43,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance update patient details to doctor.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance collects patient details and updates it to the doctor.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff update the patient details to the doctor.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0005r:,HEAT Sprint 4,,4,Done
+Patient details from ambulance,HEAT-19,10028,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:24,12/1/2022 12:06,11/30/2022 20:41,12/1/2022 12:06,,0,"User Story
+
+As a staff in the ambulance update patient details to doctor.
+
+Acceptance Criteria:
+
+In this page the staff in the ambulance collects patient details and updates it to the doctor.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As staff update the patient details to the doctor.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0005j:,HEAT Sprint 4,,4,Done
+Update patient details,HEAT-18,10027,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shwetha.c,638753b5a593cb822e971cae,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:22,12/1/2022 12:05,11/30/2022 20:40,12/1/2022 12:05,,0,"User Story
+
+As a user update patient details
+
+Acceptance Criteria:
+
+In this page communication is done about patient current details.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As user update the patient current details.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0005b:,HEAT Sprint 3,,3,Done
+Update patient details,HEAT-17,10026,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,Ajay Rawal,638753bf2acfad92d7b40a1a,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:22,12/1/2022 12:05,11/30/2022 20:39,12/1/2022 12:05,,0,"User Story
+
+As a user update patient details
+
+Acceptance Criteria:
+
+In this page communication is done about patient current details.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As user update the patient current details.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i00053:,HEAT Sprint 3,,3,Done
+Update patient condition to staff,HEAT-16,10025,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shwetha.c,638753b5a593cb822e971cae,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:21,12/1/2022 12:05,11/30/2022 20:38,12/1/2022 12:05,,0,"User Story
+
+As a user update patient details to staff.
+
+Acceptance Criteria:
+
+In this page user has to update patient details to doctor.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As user update the patient details to staff.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0004d:,HEAT Sprint 3,,4,Done
+Update patient condition to staff,HEAT-15,10024,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,Ajay Rawal,638753bf2acfad92d7b40a1a,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:21,12/1/2022 12:05,11/30/2022 20:35,12/1/2022 12:05,,0,"User Story
+
+As a user update patient details to staff.
+
+Acceptance Criteria:
+
+In this page communication is done about patient condition to staff.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As user update the patient details to staff.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0004b:,HEAT Sprint 3,,4,Done
+Send patient details from ambulance to doctor,HEAT-14,10023,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shreya.CN,638753baf6c85b343c0b848d,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:20,12/1/2022 12:05,11/30/2022 20:34,12/1/2022 12:05,,0,"User Story
+
+As an Ambulance I want to send patient details to doctor while ambulance is carrying the patient.
+
+Acceptance Criteria:
+
+In this page ambulance has to update patient details to doctor during travel to save time.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+# Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As ambulance update the patient details to the doctor while ambulance is carrying the patient.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0004f:,HEAT Sprint 3,,4,Done
+Send patient details from ambulance to doctor,HEAT-13,10022,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shreya.CN,638753baf6c85b343c0b848d,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:19,12/1/2022 12:05,11/30/2022 20:33,12/1/2022 12:05,,0,"User Story
+
+As an Ambulance I want to send patient details to doctor while ambulance is carrying the patient.
+
+Acceptance Criteria:
+
+In this page ambulance has to update patient details to doctor during travel.
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+#   Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As ambulance update the patient details to the doctor while carrying the patient.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i00047:,HEAT Sprint 3,,4,Done
+Update patient details to hospital,HEAT-12,10021,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,sai.subramaniyam,638753bc9960988ef6c0c5e8,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:18,12/1/2022 12:04,12/1/2022 12:24,12/1/2022 12:04,,0,"User Story
+
+As a Doctor I want to update patient details to hospital. 
+
+Acceptance Criteria:
+
+In update patient details page ,Doctor has to update the patient details to the hospital 
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+#   Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As the Doctor update the patient details to the hospital.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0003z:,HEAT Sprint 2,,4,Done
+Update patient details to hospital,HEAT-11,10020,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,sai.subramaniyam,638753bc9960988ef6c0c5e8,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:18,12/1/2022 12:04,12/1/2022 12:24,12/1/2022 12:04,,0,"User Story
+
+As a Doctor I want to update patient details to hospital. 
+
+Acceptance Criteria:
+
+In update patient details page ,Doctor has to update the patient details to the hospital 
+
+With the Patient’s Details:
+
+#     Name
+#     Age
+#   Blood Group
+#   Disease
+#   Previous History
+#   Temperature
+#   Pulse Rate
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As the Doctor update the patient details to the hospital.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0002y:,HEAT Sprint 2,,4,Done
+Doctor registration page,HEAT-10,10019,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shwetha.c,638753b5a593cb822e971cae,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:18,12/1/2022 12:04,11/30/2022 20:13,12/1/2022 12:04,,0,"User Story
+
+As a Hospital management I want a registration page for registering a new account.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     Name
+#     Phone Number
+#   E-mail
+#   Username
+#   Password
+#   Confirm Password
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As the Doctor enter the credentials to get registered.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0003j:,HEAT Sprint 2,,4,Done
+Doctor registration page,HEAT-9,10018,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,Ajay Rawal,638753bf2acfad92d7b40a1a,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:17,12/1/2022 12:04,11/30/2022 20:11,12/1/2022 12:04,,0,"User Story
+
+As a Hospital management I want a registration page for registering a new account.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     Name
+#     Phone Number
+#    E-mail
+#    Username
+#    Password
+#    Confirm Password
+
+ 
+
+    
+
+  
+
+Definition Of Done
+
+As the Doctor enter the credentials to get registered.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0002z:,HEAT Sprint 2,,4,Done
+Doctor login page,HEAT-8,10017,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,shwetha.c,638753b5a593cb822e971cae,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:17,12/1/2022 12:04,11/30/2022 20:10,12/1/2022 12:04,,0,"User Story
+
+As a Hospital management I want a doctor’s login page.
+
+Acceptance Criteria:
+
+In the login page the doctor has to view the login page using the credentials
+
+With the credentials:
+
+    -Name
+
+    -Password
+
+    
+
+  
+
+Definition Of Done
+
+As the doctor enter the credentials to get logged in.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0002x:,HEAT Sprint 2,,3,Done
+Doctor login page,HEAT-7,10016,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,Ajay Rawal,638753bf2acfad92d7b40a1a,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 19:17,12/1/2022 12:04,11/30/2022 20:11,12/1/2022 12:04,,0,"User Story
+
+As a Hospital management I want a doctor’s login page.
+
+Acceptance Criteria:
+
+In the login page the doctor has to view the login page using the credentials
+
+With the credentials:
+
+    -Name
+
+    -Password
+
+    
+
+  
+
+Definition Of Done
+
+As the doctor enter the credentials to get logged in.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0002v:,HEAT Sprint 2,,3,Done
+Receive patient details and admit to hospital.,HEAT-6,10015,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,sai.subramaniyam,638753bc9960988ef6c0c5e8,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:32,12/1/2022 12:03,11/30/2022 19:59,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want to receive patient details and admit to hospital.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     Name
+#     Age
+#     Blood Group
+#     Disease
+#    Previous History
+#    Temperature
+#    Pulse Rate
+
+
+
+    
+
+  
+
+Definition Of Done
+
+As the user enter the patient credentials.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0001n:,HEAT Sprint 1,,3,Done
+Receive patient details.,HEAT-5,10014,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,sai.subramaniyam,638753bc9960988ef6c0c5e8,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:31,12/1/2022 12:03,12/1/2022 12:24,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want to receive patient details and admit to hospital.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     Name
+#     Age
+#     Blood Group
+#     Disease
+#    Previous History
+#    Temperature
+#    Pulse Rate
+
+
+
+    
+
+  
+
+Definition Of Done
+
+As the user enter the patient credentials.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0001v:,HEAT Sprint 1,,3,Done
+Hospital registration page,HEAT-4,10013,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,heena.kausar,638753b85fc160544e1c11ff,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:31,12/1/2022 12:03,11/30/2022 19:47,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want a registration page for registering a new account.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     -Name
+#     -Phone Number
+#    -E-mail
+#    -Username
+#   -Password
+#   -Confirm Password
+
+
+
+    
+
+  
+
+Definition Of Done
+
+As the User enter the credentials to get registered.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i00027:,HEAT Sprint 1,,4,Done
+Hospital registration page,HEAT-3,10012,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,heena.kausar,638753b85fc160544e1c11ff,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:30,12/1/2022 12:03,11/30/2022 20:57,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want a registration page for registering a new account.
+
+Acceptance Criteria:
+
+In the registration page the user has to enter the required credentials to get registered
+
+With the credentials:
+
+#     -Name
+#     -Phone Number
+#    -E-mail
+#    -Username
+#   -Password
+#   -Confirm Password
+
+
+
+    
+
+  
+
+Definition Of Done
+
+As the User enter the credentials to get registered.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0001z:,HEAT Sprint 1,,4,Done
+Hospital login page,HEAT-2,10011,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:30,12/1/2022 12:03,11/30/2022 20:57,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want a login page.
+
+Acceptance Criteria:
+
+In the login page the user has to view the login page using the credentials
+
+With the credentials:
+
+    -Name
+
+    -Password
+
+    
+
+  
+
+Definition Of Done
+
+As the User enter the credentials to get logged in.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0001r:,HEAT Sprint 1,,3,Done
+Hospital login page,HEAT-1,10010,Story,Done,HEAT,Heath_Care_Express,software,pradeek,637323f500cb2fc3f98584e0,,Medium,Done,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,pradeek,637323f500cb2fc3f98584e0,11/30/2022 18:25,12/1/2022 12:03,11/30/2022 20:08,12/1/2022 12:03,,0,"User Story
+
+As a Hospital management I want a login page.
+
+Acceptance Criteria:
+
+In the login page the user has to view the login page using the credentials
+
+With the credentials:
+
+    -Name
+
+    -Password
+
+    
+
+  
+
+Definition Of Done
+
+As the User enter the credentials to get logged in.",,pradeek,637323f500cb2fc3f98584e0,,,,,,,,,,,0|i0001j:,HEAT Sprint 1,,3,Done
