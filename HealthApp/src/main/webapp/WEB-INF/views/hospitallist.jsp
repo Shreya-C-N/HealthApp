@@ -97,7 +97,7 @@ body {
 			<ul>
 				<li><a href="/index">HOME</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/aboutus">ABOUT US</a></li>&nbsp;&nbsp;&nbsp;
-				<li><a href="/admindashboard">AMBULANCE</a></li>&nbsp;&nbsp;&nbsp;
+				<li><a href="/admindashboard">ADMIN</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/adminlogin">LOGOUT</a></li>
 			</ul>
 		</div>

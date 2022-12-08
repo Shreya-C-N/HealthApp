@@ -177,6 +177,7 @@ body {
 									<td>Hospital Name</td>
 									<td>Doctors Availability</td>
 									<td>Bed Availability</td>
+									<th>Location</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -187,6 +188,9 @@ body {
 										<td>${am.hospitalName}</td>
 										<td>${am.doctorsAvailability}</td>
 										<td>${am.bedAvailability}</td>
+										<td><a href="https://www.google.com/maps/place/${am.location}"
+							class="btn btn-primary">LOCATION</a> 
+							                   </td>
 
 									</tr>
 								</c:forEach>

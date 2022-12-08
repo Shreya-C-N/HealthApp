@@ -130,8 +130,8 @@ public class HealthAppController {
 		if ((a.getHospitalAvailability().equals("Yes") && a.getDoctorsAvailability().equals("Yes"))
 				&& (a.getBedAvailability().equals("Yes"))) {
 			System.out.println(a.getHospitalAvailability());
-			model.addAttribute("success", "Login to enter patient details");
-			return "login";
+			model.addAttribute("success", "Succesfully Updated");
+			return "ambulance";
 		} else {
 			model.addAttribute("error", "No Availability");
 			return "ambulance";

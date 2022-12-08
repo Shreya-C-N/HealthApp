@@ -23,7 +23,7 @@ public class WebSecurityConfig {
 		http.authorizeRequests().antMatchers("/register").anonymous().antMatchers("/user").hasAnyRole("USER")
 				.antMatchers("/register", "/login", "/logout", "/resetUsers").permitAll().and().httpBasic();
 
-		return http.build();
+		return http.build(); 
 	}
 
 	@Bean

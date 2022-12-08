@@ -232,7 +232,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 			<ul>
 				<li><a href="/index">HOME</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/aboutus">ABOUT US</a></li>&nbsp;&nbsp;&nbsp;
-				<li><a href="/admindashboard">AMBULANCE</a></li>&nbsp;&nbsp;&nbsp;
+				<li><a href="/admindashboard">ADMIN</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/adminlogin">LOGOUT</a></li>
 
 			</ul>
@@ -271,7 +271,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 								Rajeswari Medical College & Hospital</option>
 						</select>
 					</div>
-
+					
 					<div class="select">
 						<label>Hospital Availability</label><br> <Select
 							name="hospitalAvailability" style="width: 300px">
@@ -298,6 +298,9 @@ form .pass-link a:hover, form .signup-link a:hover {
 							<option value="No">No</option>
 						</Select>
 					</div>
+						<div class="field">
+							<input name="location" type="text" /> <label>LOCATION</label>
+						</div>
 					<br>
 					<div class="field">
 						<input name="submit" value="SUBMIT" type="submit" />

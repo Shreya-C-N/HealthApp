@@ -234,7 +234,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 				<li><a href="/index">HOME</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/aboutus">ABOUT US</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/home">NURSE</a></li>&nbsp;&nbsp;&nbsp;
-				<li><a href="/adminlogin">AMBULANCE</a></li>
+				<li><a href="/adminlogin">ADMIN</a></li>
 
 			</ul>
 		</div>

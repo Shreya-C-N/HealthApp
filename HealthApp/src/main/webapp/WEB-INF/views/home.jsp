@@ -138,7 +138,7 @@ button:hover {
 				<li><a href="/aboutus">ABOUT US</a></li>
 
 				<li><a href="/doctorhome">DOCTOR</a></li>
-				<li><a href="/adminlogin">AMBULANCE</a></li>
+				<li><a href="/adminlogin">ADMIN</a></li>
 
 			</ul>
 		</div>

@@ -233,7 +233,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 				<li><a href="/index">HOME</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/aboutus">ABOUT US</a></li>&nbsp;&nbsp;&nbsp;
 				<li><a href="/doctorhome">DOCTOR</a></li>&nbsp;&nbsp;&nbsp;
-				<li><a href="/adminlogin">AMBULANCE</a></li>
+				<li><a href="/adminlogin">ADMIN</a></li>
 
 			</ul>
 		</div>
@@ -283,7 +283,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 						<input name="confirmpassword" type="password"
 							pattern="[A-Za-z0-9#@$&]{3,10}" required
 							title="Password must be between 3-10 characters and type only valid characters !!" />
-						<label>Confirm Password: </label>
+						<label>Confirm Password </label>
 					</div>
 					<div class="field">
 						<input type="submit" value="REGISTER" name="submit" />

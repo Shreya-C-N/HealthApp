@@ -177,7 +177,7 @@ h1 {
 			<ul>
 				<li><a href="/index">HOME</a></li>
 				<li><a href="/aboutus">ABOUT US</a></li>
-				<li><a href="/adminlogin">AMBULANCE</a></li>
+				<li><a href="/adminlogin">ADMIN</a></li>
 
 
 			</ul>

@@ -12,6 +12,7 @@ public class Ambulance {
 	private int id;
 	private String hospitalAvailability;
 	private String hospitalName;
+	private String location;
 	private String doctorsAvailability;
 	private String bedAvailability;
 
@@ -20,22 +21,24 @@ public class Ambulance {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Ambulance(int id, String hospitalAvailability, String hospitalName, String doctorsAvailability,
+	public Ambulance(int id, String hospitalAvailability, String hospitalName, String location,String doctorsAvailability,
 			String bedAvailability) {
 		super();
 		this.id = id;
 		this.hospitalAvailability = hospitalAvailability;
 		this.hospitalName = hospitalName;
+		this.location=location;
 		this.doctorsAvailability = doctorsAvailability;
 		this.bedAvailability = bedAvailability;
 	}
 
-	public Ambulance(String hospitalAvailability, String hospitalName, String doctorsAvailability,
+	public Ambulance(String hospitalAvailability, String hospitalName,String location, String doctorsAvailability,
 			String bedAvailability) {
 		super();
 
 		this.hospitalAvailability = hospitalAvailability;
 		this.hospitalName = hospitalName;
+		this.location=location;
 		this.doctorsAvailability = doctorsAvailability;
 		this.bedAvailability = bedAvailability;
 	}
@@ -63,6 +66,16 @@ public class Ambulance {
 	public void setHospitalName(String hospitalName) {
 		this.hospitalName = hospitalName;
 	}
+	
+	
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
 
 	public String getDoctorsAvailability() {
 		return doctorsAvailability;
@@ -83,8 +96,10 @@ public class Ambulance {
 	@Override
 	public String toString() {
 		return "Ambulance [id=" + id + ", hospitalAvailability=" + hospitalAvailability + ", hospitalName="
-				+ hospitalName + ", doctorsAvailability=" + doctorsAvailability + ", bedAvailability=" + bedAvailability
-				+ "]";
+				+ hospitalName + ", location=" + location + ", doctorsAvailability=" + doctorsAvailability
+				+ ", bedAvailability=" + bedAvailability + "]";
 	}
+
+
 
 }

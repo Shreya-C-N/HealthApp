@@ -5,6 +5,7 @@ public class AmbulanceModel {
 	private int id;
 	private String hospitalAvailability;
 	private String hospitalName;
+	private String location;
 	private String doctorsAvailability;
 	private String bedAvailability;
 
@@ -12,22 +13,24 @@ public class AmbulanceModel {
 
 	}
 
-	public AmbulanceModel(int id, String hospitalAvailability, String hospitalName, String doctorsAvailability,
+	public AmbulanceModel(int id, String hospitalAvailability, String hospitalName,String location, String doctorsAvailability,
 			String bedAvailability) {
 		super();
 		this.id = id;
 		this.hospitalAvailability = hospitalAvailability;
 		this.hospitalName = hospitalName;
+		this.location=location;
 		this.doctorsAvailability = doctorsAvailability;
 		this.bedAvailability = bedAvailability;
 	}
 
-	public AmbulanceModel(String hospitalAvailability, String hospitalName, String doctorsAvailability,
+	public AmbulanceModel(String hospitalAvailability, String hospitalName,String location, String doctorsAvailability,
 			String bedAvailability) {
 		super();
 
 		this.hospitalAvailability = hospitalAvailability;
 		this.hospitalName = hospitalName;
+		this.location=location;
 		this.doctorsAvailability = doctorsAvailability;
 		this.bedAvailability = bedAvailability;
 	}
@@ -56,6 +59,15 @@ public class AmbulanceModel {
 		this.hospitalName = hospitalName;
 	}
 
+	
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
 	public String getDoctorsAvailability() {
 		return doctorsAvailability;
 	}
@@ -75,8 +87,9 @@ public class AmbulanceModel {
 	@Override
 	public String toString() {
 		return "AmbulanceModel [id=" + id + ", hospitalAvailability=" + hospitalAvailability + ", hospitalName="
-				+ hospitalName + ", doctorsAvailability=" + doctorsAvailability + ", bedAvailability=" + bedAvailability
-				+ "]";
+				+ hospitalName + ", location=" + location + ", doctorsAvailability=" + doctorsAvailability
+				+ ", bedAvailability=" + bedAvailability + "]";
 	}
 
+	
 }

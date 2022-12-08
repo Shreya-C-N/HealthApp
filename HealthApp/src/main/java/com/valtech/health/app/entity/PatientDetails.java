@@ -80,6 +80,8 @@ public class PatientDetails {
 		this.age = age;
 	}
 
+
+
 	public String getDoctorsname() {
 		return doctorsname;
 	}
@@ -135,5 +137,15 @@ public class PatientDetails {
 	public void setPulse_rate(int pulse_rate) {
 		this.pulse_rate = pulse_rate;
 	}
+
+	@Override
+	public String toString() {
+		return "PatientDetails [id=" + id + ", name=" + name + ", age=" + age + ", doctorsname=" + doctorsname
+				+ ", bloodgroup=" + bloodgroup + ", disease=" + disease + ", previous_history=" + previous_history
+				+ ", temperature=" + temperature + ", blood_pressure=" + blood_pressure + ", pulse_rate=" + pulse_rate
+				+ "]";
+	}
+
+	
 
 }
