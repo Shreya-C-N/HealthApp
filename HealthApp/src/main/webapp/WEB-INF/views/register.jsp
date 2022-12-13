@@ -256,7 +256,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 							title="Name must be between 3-10 characters!!" /> <label>Name</label>
 					</div>
 					<div class="field">
-						<input name="number" type="text" pattern="(0/91)?[7-9][0-9]{9}"
+						<input name="number" type="text" pattern="(0/91)?[6-9][0-9]{9}"
 							required title="Invalid Phone number !!" /> <label>Phone
 							Number</label>
 					</div>

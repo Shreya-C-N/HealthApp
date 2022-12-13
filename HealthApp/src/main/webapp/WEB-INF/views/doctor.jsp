@@ -222,6 +222,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 	text-decoration: underline;
 }
 </style>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 </head>
 
 <body>
@@ -255,32 +256,35 @@ form .pass-link a:hover, form .signup-link a:hover {
 						<br />
 					</c:if>
 
-					<div class="field">
-						<input name="doctorsname" type="text" /> <label>Doctor's
-							Name</label>
-					</div>
-					<div class="field">
-						<input name="patients_name" type="text" /> <label>Patient's
-							Name</label>
-					</div>
+					<div class="select">
+						<label>Doctors Name</label><br /> <select name="doctorsname"
+							style="width: 300px">
+							<option value="none">Select</option>
+							<c:forEach items="${ad}" var="ad">
+								<option value=${ad.name} >${ad.name}</option>
+							</c:forEach>
+							</select>
+							</div>
+							<div class="field">
+								<input name="patients_name" type="text" /> <label>Patient's
+									Name</label>
+							</div>
 
-					<div class="field">
-						<input name="doctor_comments" type="text" /> <label>Doctor's
-							Comment</label>
-					</div>
+							<div class="field">
+								<input name="doctor_comments" type="text" /> <label>Doctor's
+									Comment</label>
+							</div>
 
-					<!--  <div class="field">
-                    <textarea  name="doctor_comments" rows="4" cols="40"></textarea>
-                    <label>Doctor's Comment</label>
-                </div> -->
-					<br> <br>
 
-					<div class="field">
-						<input name="submit" value="SUBMIT" type="submit">
-					</div>
-					<div class="field">
-						<input name="submit" value="CLEAR" type="reset">
-					</div>
+							<br>
+							<br>
+
+							<div class="field">
+								<input name="submit" value="SUBMIT" type="submit">
+							</div>
+							<div class="field">
+								<input name="submit" value="CLEAR" type="reset">
+							</div>
 		</center>
 		</form>
 </body>

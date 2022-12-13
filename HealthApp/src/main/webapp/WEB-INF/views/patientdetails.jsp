@@ -231,6 +231,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 	text-decoration: underline;
 }
 </style>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 </head>
 
 <body>
@@ -253,47 +254,93 @@ form .pass-link a:hover, form .signup-link a:hover {
 					<form action="/patientdetails" method="post">
 						<c:if test="${not empty success }">
 							<div style="color: green;">
-								<h3>${success}
+								<h3>${success}</h3>
 							</div>
 						</c:if>
 						<c:if test="${not empty error }">
 							<div style="color: red;">
-								<h3>${error}
+								<h3>${error}</h3>
 							</div>
 						</c:if>
 
 						<div class="field">
-							<input name="name" type="text" /> <label>Name</label>
+							<input name="name" type="text" pattern="[A-Za-z]{5,10}" required
+							title="Name must be between 5-10 characters!!" /> <label>Name</label>
 						</div>
+						<!-- age between 1 to 150 -->
 						<div class="field">
-							<input name="age" type="text" /> <label>Age</label>
+							<input name="age" type="text" pattern="^((150)|(1[0-4][0-9]{1})|([1-9][0-9]{1})|([1-9]))$"
+							required title="Age is not valid"/> <label>Age</label>
 						</div>
+						
+					
 						<div class="field">
-							<input name="doctorsname" type="text" /> <label>Doctors
-								Name</label>
+							<input name="disease" type="text" pattern="[A-Za-z ]{5,30}" required
+							title="Name must be between 5-30 characters!!" /> <label>Disease</label>
 						</div>
+				
+						
+						<!-- pulse rate between 50 to 200-->
 						<div class="field">
-							<input name="bloodgroup" type="text" /> <label>Blood
-								Group</label>
+							<input name="pulse_rate" type="text" pattern="^((200)|(1[0-9]{2})|([5-9][0-9]{1}))$"
+							required title="Invalid pulse rate" /> 
+							<label>Pulse Rate</label>
 						</div>
-						<div class="field">
-							<input name="disease" type="text" /> <label>Disease</label>
+					
+							<div class="select">
+						<label>Blood Group</label><br> <select name="bloodgroup" style="width: 300px">
+							<option value="none">Select</option>
+							<option value="A+">A+</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B-">B-</option>
+							<option value="AB+">AB+</option>
+							<option value="AB-">AB-</option>
+							<option value="O+">O+</option>
+							<option value="O-">O-</option>
+						</select>
+					</div>
+					
+					 <div class="select">
+						<label>Temperature in fahreheit</label><br> <select name="temperature" style="width: 300px">
+							<option value="none">Select</option>
+							<option value="Between 75 to 78">Between 75 to 78</option>
+							<option value="Between 79 to 82">Between 79 to 82</option>
+							<option value="Between 83 to 88">Between 83 to 88</option>
+							<option value="Between 88 to 95">Between 88 to 95</option>
+							<option value="Between 95 to 98">Between 95 to 98</option>
+							<option value="Between 98 to 100">Between 98 to 100</option>
+							<option value="Between 101 to 105">Between 101 to 105</option>
+							<option value="Between 106 to 110">Between 106 to 110</option>
+							<option value="Between 111 to 113">Between 111 to 113</option>
+							<option value="Between 114 to 116">Between 114 to 116</option>
+						</select>
+					</div> 
+						
+					<div class="select">
+						<label>Blood Pressure</label><br/> <select name="blood_pressure" style="width: 300px">
+							<option value="none">Select</option>
+						    <option value="<120/<80mmHg">less than 120/less than 80mmHg(Optimal)</option>
+							<option value="120-129/80-84mmHg">120-129/80-84 mmHg(Normal)</option>
+							<option value="130-139/85-89mmHg">130-139/85-89 mmHg(High Normal)</option>
+							<option value="140-159/90-99mmHg">140-159/90-99 mmHg(grade1 hypertension)</option>
+							<option value="160-179/100-109mmHg">160-179/100-109 mmHg(grade2 hypertension)</option>
+							<option value=">=180/>=110mmHg">>=180/>=110 mmHg(grade3 hypertension)</option>
+							<option value=">=140/<90mmHg">>=140/<90 mmHg(Isolated systolic hypertension)</option> 
+						</select>
+					</div>
+					
+					<div class="select">
+					<label>Doctors Name</label><br/>
+					<select name="doctorsname" style="width: 300px">
+					<option value="none">Select</option>
+					<c:forEach items="${ad}" var="ad"> 
+					<option value=${ad.name} >${ad.name}</option> 
+							</c:forEach>  
+							
+						</select>
 						</div>
-						<div class="field">
-							<input name="previous_history" type="text" /> <label>Previous
-								History</label>
-						</div>
-						<div class="field">
-							<input name="temperature" type="text" /> <label>Temperature</label>
-						</div>
-						<div class="field">
-							<input name="blood_pressure" type="text" /> <label>Blood
-								Pressure</label>
-						</div>
-						<div class="field">
-							<input name="pulse_rate" type="text" /> <label>Pulse
-								Rate</label>
-						</div>
+				
 						<div class="field">
 							<input name="submit" value="SUBMIT" type="submit" />
 						</div>

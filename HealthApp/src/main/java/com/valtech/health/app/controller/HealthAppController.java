@@ -1,5 +1,8 @@
 package com.valtech.health.app.controller;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -263,22 +267,23 @@ public class HealthAppController {
 
 	/* This method helps to send patient details */
 	@GetMapping("/patientdetails")
-	public String newpatientdetails() {
+	public String newpatientdetails(Model m) {
+		List<DoctorUser> ad = dus.getAllDoctors();
+		m.addAttribute("ad", ad);
 		return "patientdetails";
 	}
 
 	/* This method helps to send patient details */
 	@PostMapping("/patientdetails")
-	public void patientdetails(@ModelAttribute PatientDetails p, Model model) {
+	public void patientdetails(@ModelAttribute PatientDetails p, ModelAndView model,Model m) {
 
-		model.addAttribute("name", p.getName());
-
-		if (dus.findByName(p.getDoctorsname()) == true) {
+		m.addAttribute("name", p.getName());
+		/*List<DoctorUser> ad = dus.getAllDoctors();
+        model.addObject("ad", ad);*/
+		//System.out.println(ad);
 			pdsi.createPatientDetails(p);
-			model.addAttribute("success", "Successfully Sent");
-		} else {
-			model.addAttribute("error", "Doctor is not available");
-		}
+			m.addAttribute("success", "Successfully Sent");
+		
 	}
 
 	/* This method helps to list the patient details */
@@ -293,6 +298,7 @@ public class HealthAppController {
 	@PostMapping("/updatePatientDetails/{id}")
 	public ModelAndView saveUpdatePatientDetails(@PathVariable("id") int id, @ModelAttribute PatientDetails p,
 			@RequestParam("submit") String submit) {
+		
 		ModelAndView view = new ModelAndView("/list");
 		if (submit.equals("Cancel")) {
 			view.addObject("p", ps.getAllPatientDetails());
@@ -352,7 +358,6 @@ public class HealthAppController {
 			@ModelAttribute DoctorUserModel doctorUserModel, Model model, BindingResult result) {
 
 		DoctorUser d = null;
-
 		try {
 
 			d = dur.findByEmail(email);
@@ -396,7 +401,9 @@ public class HealthAppController {
 
 	/* This method helps to send doctor comments */
 	@GetMapping("/doctor")
-	public String newdoctordetails() {
+	public String newdoctordetails(Model m) {
+		List<DoctorUser> ad = dus.getAllDoctors();
+		m.addAttribute("ad", ad);
 		return "doctor";
 	}
 
@@ -447,8 +454,41 @@ public class HealthAppController {
 		return "updateDoctorComments";
 	}
 
+	/* This method helps to update the doctor comments */
+	@PostMapping("/forgotpassword")
+	public String saveNewPassword(@RequestParam("email") String email,Model model,@ModelAttribute UserModel userModel,
+			@RequestParam("submit") String submit) {
+		
+		User u=us.findByEmail(email);
+		if (u == null) {
+			model.addAttribute("error", "Invalid Email");
+			return "forgotpassword";
+		}
+
+		if (userModel.getPassword().equals(userModel.getConfirmpassword())) {
+			String password=userModel.getPassword();
+			String confirmpassword=userModel.getConfirmpassword();
+			us.changePassword(u,password,confirmpassword);
+			return "login";
+
+		} else {
+			model.addAttribute("error", "Password and Confirm Password doesnot match");
+			return "forgotpassword";
+		}
+	
+	}
+	
+	
+
+	/* This method helps to update the doctor comments */
+	@GetMapping("/forgotpassword")
+	public String updatePassword() {
+
+		return "forgotpassword";
+	}
+
 	/* Comment List */
-	@GetMapping("/commentlist") // staff
+	@GetMapping("/commentlist") //staff
 	public String Comments(Model model) {
 		model.addAttribute("d", ds.getAllDoctorComments());
 		return "commentlist";

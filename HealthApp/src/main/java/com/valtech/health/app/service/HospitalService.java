@@ -18,4 +18,6 @@ public interface HospitalService {
 	/* This method retrieves Hospitals by ID */
 	Hospital getHospitalById(int id);
 
+	
+
 }

@@ -107,12 +107,12 @@ th {
 					<th>Id</th>
 					<th>Name</th>
 					<th>Age</th>
-					<th>Blood Group</th>
 					<th>Disease</th>
-					<th>Previous History</th>
+					<th>Pulse Rate</th>
+					<th>Blood Group</th>
 					<th>Temperature</th>
 					<th>Blood Pressure</th>
-					<th>Pulse Rate</th>
+					<th>Doctors Name</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
@@ -122,13 +122,13 @@ th {
 						<td>${p.id}</td>
 						<td>${p.name}</td>
 						<td>${p.age}</td>
-						<td>${p.bloodgroup}</td>
 						<td>${p.disease}</td>
-						<td>${p.previous_history}</td>
+						<td>${p.pulse_rate}</td>
+						<td>${p.bloodgroup}</td>
 						<td>${p.temperature}</td>
 						<td>${p.blood_pressure}</td>
-						<td>${p.pulse_rate}</td>
-
+						<td>${p.doctorsname}</td>
+						
 						<td><a href="/updatePatientDetails/${p.id}"
 							class="btn btn-primary">Update</a>                    </td>
 

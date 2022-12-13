@@ -1,8 +1,11 @@
 package com.valtech.health.app.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.valtech.health.app.entity.DoctorUser;
+import com.valtech.health.app.entity.PatientDetails;
 import com.valtech.health.app.repostitory.DoctorUserRepository;
 
 @Service
@@ -35,6 +38,12 @@ public class DoctorUserServiceImpl implements DoctorUserService {
 	@Override
 	public DoctorUser findByUsername(String username) {
 		return doctorUserRepository.findByUsername(username);
+	}
+
+	/* This method lists all the doctors */
+	@Override
+	public List<DoctorUser> getAllDoctors() {
+		return doctorUserRepository.findAll();
 	}
 
 	/* This method finds Doctor by their Password */

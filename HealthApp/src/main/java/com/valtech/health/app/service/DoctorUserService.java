@@ -1,5 +1,7 @@
 package com.valtech.health.app.service;
 
+import java.util.List;
+
 import com.valtech.health.app.entity.DoctorUser;
 
 public interface DoctorUserService {
@@ -24,4 +26,7 @@ public interface DoctorUserService {
 
 	/* This method finds Doctor by name */
 	Boolean findByName(String name);
+
+	/* This method lists all the doctors */
+	List<DoctorUser> getAllDoctors();
 }

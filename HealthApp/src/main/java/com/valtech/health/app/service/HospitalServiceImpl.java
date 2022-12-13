@@ -41,5 +41,6 @@ public class HospitalServiceImpl implements HospitalService {
 		// TODO Auto-generated method stub
 		return hospitalRepository.getReferenceById(id);
 	}
+	
 
 }

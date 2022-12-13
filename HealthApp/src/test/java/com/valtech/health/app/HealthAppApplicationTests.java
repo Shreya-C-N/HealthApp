@@ -233,7 +233,7 @@ class HealthAppApplicationTests {
 	private PatientDetailsRepository patientDetailsRepository;
 
 	/* Testing for creating patients */
-	@Test
+/*	@Test
 	public void createPatient() {
 
 		PatientDetails p1 = new PatientDetails("priya", 23, "aaa", "o positive", "fever", "null", 95, 89, 88);
@@ -242,14 +242,14 @@ class HealthAppApplicationTests {
 
 	}
 
-	/* Testing for finding all patient details */
+	 Testing for finding all patient details 
 	@Test
 	public void AllPatientDeatils() {
 		when(patientDetailsRepository.findAll())
 				.thenReturn(Stream.of(new PatientDetails("priya", 23, "aaa", "o positive", "fever", "null", 95, 89, 88))
 						.collect(Collectors.toList()));
 
-	}
+	}*/
 
 	/* Test cases for userServiceImpl */
 

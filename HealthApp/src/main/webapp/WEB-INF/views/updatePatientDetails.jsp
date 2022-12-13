@@ -236,16 +236,17 @@ form .pass-link a:hover, form .signup-link a:hover {
 						<input type="text" name="age" value="${p.age}" /> <label>Age</label>
 					</div>
 					<div class="field">
-						<input type="text" name="bloodgroup" value="${p.bloodgroup}" /> <label>Blood
-							Group</label>
-					</div>
-					<div class="field">
 						<input type="text" name="disease" value="${p.disease}" /> <label>Disease</label>
 					</div>
 					<div class="field">
-						<input type="text" name="previous_history"
-							value="${p.previous_history}" /> <label>Previous History</label>
+						<input type="text" name="pulse_rate" value="${p.pulse_rate}" /> <label>Rate</label>
 					</div>
+					 <div class="field">
+						<input type="text" name="bloodgroup" value="${p.bloodgroup}" /> <label>Blood
+							Group</label>
+					</div>
+					
+					
 					<div class="field">
 						<input type="text" name="temperature" value="${p.temperature}" />
 						<label>Temperature</label>
@@ -255,8 +256,10 @@ form .pass-link a:hover, form .signup-link a:hover {
 							value="${p.blood_pressure}" /> <label>Blood Pressure</label>
 					</div>
 					<div class="field">
-						<input type="text" name="pulse_rate" value="${p.pulse_rate}" /> <label>Rate</label>
+						<input type="text" name="doctorsname"
+							value="${p.doctorsname}" /> <label>Doctors Name</label>
 					</div>
+					
 					<div class="field">
 						<input type="submit" name="submit" value="Save" />
 					</div>

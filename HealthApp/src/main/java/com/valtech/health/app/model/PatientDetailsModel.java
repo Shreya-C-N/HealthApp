@@ -7,9 +7,8 @@ public class PatientDetailsModel {
 	private String doctorsname;
 	private String bloodgroup;
 	private String disease;
-	private String previous_history;
-	private int temperature;
-	private int blood_pressure;
+	private String temperature;
+	private String blood_pressure;
 	private int pulse_rate;
 
 	public PatientDetailsModel() {
@@ -18,21 +17,20 @@ public class PatientDetailsModel {
 	}
 
 	public PatientDetailsModel(String name, int age, String doctorsname, String bloodgroup, String disease,
-			String previous_history, int temperature, int blood_pressure, int pulse_rate) {
+			 String temperature, String blood_pressure, int pulse_rate) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.previous_history = previous_history;
 		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
 	}
 
 	public PatientDetailsModel(int id, String name, int age, String doctorsname, String bloodgroup, String disease,
-			String previous_history, int temperature, int blood_pressure, int pulse_rate) {
+			 String temperature, String blood_pressure, int pulse_rate) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -40,7 +38,6 @@ public class PatientDetailsModel {
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.previous_history = previous_history;
 		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
@@ -94,27 +91,20 @@ public class PatientDetailsModel {
 		this.disease = disease;
 	}
 
-	public String getPrevious_history() {
-		return previous_history;
-	}
-
-	public void setPrevious_history(String previous_history) {
-		this.previous_history = previous_history;
-	}
-
-	public int getTemperature() {
+	
+	public String getTemperature() {
 		return temperature;
 	}
 
-	public void setTemperature(int temperature) {
+	public void setTemperature(String temperature) {
 		this.temperature = temperature;
 	}
 
-	public int getBlood_pressure() {
+	public String getBlood_pressure() {
 		return blood_pressure;
 	}
 
-	public void setBlood_pressure(int blood_pressure) {
+	public void setBlood_pressure(String blood_pressure) {
 		this.blood_pressure = blood_pressure;
 	}
 
@@ -129,7 +119,7 @@ public class PatientDetailsModel {
 	@Override
 	public String toString() {
 		return "PatientDetailsModel [id=" + id + ", name=" + name + ", age=" + age + ", bloodgroup=" + bloodgroup
-				+ ", disease=" + disease + ", previous_history=" + previous_history + ", temperature=" + temperature
+				+ ", disease=" + disease  + ", temperature=" + temperature
 				+ ", blood_pressure=" + blood_pressure + ", pulse_rate=" + pulse_rate + "]";
 	}
 
