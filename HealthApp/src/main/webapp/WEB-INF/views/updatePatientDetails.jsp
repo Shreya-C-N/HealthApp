@@ -247,10 +247,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 					</div>
 					
 					
-					<div class="field">
-						<input type="text" name="temperature" value="${p.temperature}" />
-						<label>Temperature</label>
-					</div>
+					
 					<div class="field">
 						<input type="text" name="blood_pressure"
 							value="${p.blood_pressure}" /> <label>Blood Pressure</label>

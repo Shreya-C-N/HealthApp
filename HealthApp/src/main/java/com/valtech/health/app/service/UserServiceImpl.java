@@ -1,7 +1,6 @@
 package com.valtech.health.app.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.valtech.health.app.entity.User;
 import com.valtech.health.app.repostitory.UserRepository;
@@ -11,7 +10,6 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	
 
 	/* This method creates new nurse */
 	@Override
@@ -54,9 +52,9 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User changePassword(User u, String password, String confirmpassword) {
 		// TODO Auto-generated method stub
-        u.setPassword(password);
-        u.setConfirmpassword(confirmpassword);
-       return  userRepository.save(u);
+		u.setPassword(password);
+		u.setConfirmpassword(confirmpassword);
+		return userRepository.save(u);
 	}
 
 }

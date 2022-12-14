@@ -25,13 +25,15 @@ public class User {
 	private String username;
 	private String password;
 	private String confirmpassword;
+	private String role;
 
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String name, String number, String email, String username, String password, String confirmpassword) {
+	public User(String name, String number, String email, String username, String password, String confirmpassword,
+			String role) {
 		super();
 
 		this.name = name;
@@ -40,10 +42,11 @@ public class User {
 		this.username = username;
 		this.password = password;
 		this.confirmpassword = confirmpassword;
+		this.role = role;
 	}
 
 	public User(int id, String name, String number, String email, String username, String password,
-			String confirmpassword) {
+			String confirmpassword, String role) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -52,6 +55,7 @@ public class User {
 		this.username = username;
 		this.password = password;
 		this.confirmpassword = confirmpassword;
+		this.role = role;
 	}
 
 	public int getId() {
@@ -108,6 +112,20 @@ public class User {
 
 	public void setConfirmpassword(String confirmpassword) {
 		this.confirmpassword = confirmpassword;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", number=" + number + ", email=" + email + ", username="
+				+ username + ", password=" + password + ", confirmpassword=" + confirmpassword + ", role=" + role + "]";
 	}
 
 }

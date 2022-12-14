@@ -301,21 +301,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 						</select>
 					</div>
 					
-					 <div class="select">
-						<label>Temperature in fahreheit</label><br> <select name="temperature" style="width: 300px">
-							<option value="none">Select</option>
-							<option value="Between 75 to 78">Between 75 to 78</option>
-							<option value="Between 79 to 82">Between 79 to 82</option>
-							<option value="Between 83 to 88">Between 83 to 88</option>
-							<option value="Between 88 to 95">Between 88 to 95</option>
-							<option value="Between 95 to 98">Between 95 to 98</option>
-							<option value="Between 98 to 100">Between 98 to 100</option>
-							<option value="Between 101 to 105">Between 101 to 105</option>
-							<option value="Between 106 to 110">Between 106 to 110</option>
-							<option value="Between 111 to 113">Between 111 to 113</option>
-							<option value="Between 114 to 116">Between 114 to 116</option>
-						</select>
-					</div> 
+					
 						
 					<div class="select">
 						<label>Blood Pressure</label><br/> <select name="blood_pressure" style="width: 300px">

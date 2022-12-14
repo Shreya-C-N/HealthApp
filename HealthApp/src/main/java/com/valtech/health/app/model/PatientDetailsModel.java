@@ -7,7 +7,6 @@ public class PatientDetailsModel {
 	private String doctorsname;
 	private String bloodgroup;
 	private String disease;
-	private String temperature;
 	private String blood_pressure;
 	private int pulse_rate;
 
@@ -24,13 +23,12 @@ public class PatientDetailsModel {
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
 	}
 
 	public PatientDetailsModel(int id, String name, int age, String doctorsname, String bloodgroup, String disease,
-			 String temperature, String blood_pressure, int pulse_rate) {
+			  String blood_pressure, int pulse_rate) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -38,7 +36,6 @@ public class PatientDetailsModel {
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
 	}
@@ -92,13 +89,7 @@ public class PatientDetailsModel {
 	}
 
 	
-	public String getTemperature() {
-		return temperature;
-	}
-
-	public void setTemperature(String temperature) {
-		this.temperature = temperature;
-	}
+	
 
 	public String getBlood_pressure() {
 		return blood_pressure;
@@ -119,7 +110,7 @@ public class PatientDetailsModel {
 	@Override
 	public String toString() {
 		return "PatientDetailsModel [id=" + id + ", name=" + name + ", age=" + age + ", bloodgroup=" + bloodgroup
-				+ ", disease=" + disease  + ", temperature=" + temperature
+				+ ", disease=" + disease  
 				+ ", blood_pressure=" + blood_pressure + ", pulse_rate=" + pulse_rate + "]";
 	}
 

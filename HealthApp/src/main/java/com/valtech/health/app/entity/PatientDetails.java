@@ -17,7 +17,6 @@ public class PatientDetails {
 	private String doctorsname;
 	private String bloodgroup;
 	private String disease;
-	private String temperature;
 	private String blood_pressure;
 	private int pulse_rate;
 
@@ -27,7 +26,7 @@ public class PatientDetails {
 	}
 
 	public PatientDetails(int id, String name, int age, String doctorsname, String bloodgroup, String disease,
-		String temperature, String blood_pressure, int pulse_rate) {
+	String blood_pressure, int pulse_rate) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -35,20 +34,18 @@ public class PatientDetails {
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
 	}
 
 	public PatientDetails(String name, int age, String doctorsname, String bloodgroup, String disease,
-			String temperature, String blood_pressure, int pulse_rate) {
+			 String blood_pressure, int pulse_rate) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.doctorsname = doctorsname;
 		this.bloodgroup = bloodgroup;
 		this.disease = disease;
-		this.temperature = temperature;
 		this.blood_pressure = blood_pressure;
 		this.pulse_rate = pulse_rate;
 	}
@@ -104,14 +101,6 @@ public class PatientDetails {
 	}
 
 
-	public String getTemperature() {
-		return temperature;
-	}
-
-	public void setTemperature(String temperature) {
-		this.temperature = temperature;
-	}
-
 	public String getBlood_pressure() {
 		return blood_pressure;
 	}
@@ -132,7 +121,7 @@ public class PatientDetails {
 	public String toString() {
 		return "PatientDetails [id=" + id + ", name=" + name + ", age=" + age + ", doctorsname=" + doctorsname
 				+ ", bloodgroup=" + bloodgroup + ", disease=" + disease 
-				+ ", temperature=" + temperature + ", blood_pressure=" + blood_pressure + ", pulse_rate=" + pulse_rate
+				 + ", blood_pressure=" + blood_pressure + ", pulse_rate=" + pulse_rate
 				+ "]";
 	}
 

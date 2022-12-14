@@ -23,6 +23,9 @@ public class Doctor {
 		// TODO Auto-generated constructor stub
 	}
 
+	
+	
+	
 	public Doctor(int id, String doctorsname, String patients_name, String doctor_comments) {
 		super();
 		this.id = id;

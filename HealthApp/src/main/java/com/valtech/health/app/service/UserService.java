@@ -22,8 +22,6 @@ public interface UserService {
 	/* This method retrieves user name by id */
 	User getUsername(int id);
 
-	
 	User changePassword(User u, String password, String confirmpassword);
 
-	
 }

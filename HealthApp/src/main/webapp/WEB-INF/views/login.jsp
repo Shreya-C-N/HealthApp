@@ -270,18 +270,17 @@ form .pass-link a:hover, form .signup-link a:hover {
 					</div>
 
 					<div class="field">
-						<input name="password" type="password" pattern="[A-Za-z]{3,10}"
-							required title="Password must be between 3-10 characters !!" />
-						<label>Password</label>
+						<input name="password" type="password" required
+							title="Password must be between 3-10 characters !!" /> <label>Password</label>
 					</div>
 
 					<div class="field">
 						<input type="submit" value="LOGIN" name="submit" />
 					</div>
 
-					
-					<a href="/register">NOT YET REGISTERED</a></br>
-					<a href="/forgotpassword">Forgot Password</a>
+
+					<a href="/register">NOT YET REGISTERED</a></br> <a
+						href="/forgotpassword">Forgot Password</a>
 					</li>
 			</div>
 		</CENTER>

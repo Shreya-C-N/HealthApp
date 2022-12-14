@@ -1,7 +1,6 @@
 package com.valtech.health.app.controller;
 
 import java.util.List;
-import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -90,6 +88,12 @@ public class HealthAppController {
 	public String index() {
 		return "index";
 	}
+	/*
+	 * @RequestMapping(value="submit", method= RequestMethod.POST) public string
+	 * send(@ModelAttribute("contact")Contact contact,ModelMap){ try{
+	 * mailservice.send(contact.getEmail(),"itsAjayrajwal2000@gmail.com",contact
+	 * .getSubject(),) } }
+	 */
 
 	/* About Us */
 	@GetMapping("/aboutus")
@@ -198,24 +202,48 @@ public class HealthAppController {
 
 	/* Login Page for Nurse */
 	@PostMapping("/login")
-	public String loginUser(@ModelAttribute UserModel userModel, @RequestParam("username") String username,
+	public String loginUser(@ModelAttribute User userModel, @RequestParam("username") String username,
 			@RequestParam("password") String password, Model model) {
 		String url;
 		User u = null;
 		User u1 = null;
+
+		System.out.println(userModel.getUsername() + userModel.getPassword());
+
+		System.out.println(username + password);
+
 		try {
-			u = ur.findByUsername(username);
-			u1 = ur.findByPassword(password);
-		} catch (Exception e) {
+
+			u = us.findByUsername(userModel.getUsername());
+			u1 = us.findByPassword(userModel.getPassword());
+		}
+
+		catch (Exception e) {
+			System.out.println(us.findByUsername(userModel.getUsername()));
+
 			System.out.println("User not found !!!");
 
 		}
-		if (u != null && u1 != null) {
-			model.addAttribute("username", username);
-			int id = us.getIdbyUsername((userModel.getUsername()));
-			url = "redirect:/dashboard/" + id;
-			return url;
+		if (u != null) {
+			System.out.println(u);
+
+			if (u.getRole().equals("NURSE")) {
+
+				System.out.println(u);
+				model.addAttribute("username", username);
+				int id = us.getIdbyUsername((userModel.getUsername()));
+				url = "redirect:/dashboard/" + id;
+				return url;
+			} else {
+				model.addAttribute("username", username);
+				int id = us.getIdbyUsername((userModel.getUsername()));
+				url = "redirect:/doctordashboard/" + id;
+
+				return url;
+			}
+
 		}
+
 		model.addAttribute("error", "Entered username or password are not correct");
 		return "login";
 	}
@@ -243,7 +271,7 @@ public class HealthAppController {
 		}
 		if (userModel.getPassword().equals(userModel.getConfirmpassword())) {
 			usi.createUser(u);
-			return "login";
+			return "redirect:/login";
 		} else {
 			model.addAttribute("error", "Password and Confirm Password doesnot match");
 			return "register";
@@ -275,15 +303,14 @@ public class HealthAppController {
 
 	/* This method helps to send patient details */
 	@PostMapping("/patientdetails")
-	public void patientdetails(@ModelAttribute PatientDetails p, ModelAndView model,Model m) {
+	public void patientdetails(@ModelAttribute PatientDetails p, ModelAndView model, Model m) {
 
 		m.addAttribute("name", p.getName());
-		/*List<DoctorUser> ad = dus.getAllDoctors();
-        model.addObject("ad", ad);*/
-		//System.out.println(ad);
-			pdsi.createPatientDetails(p);
-			m.addAttribute("success", "Successfully Sent");
-		
+		// List<DoctorUser> ad = dus.getAllDoctors(); model.addObject("ad", ad);
+		// System.out.println(ad);
+		pdsi.createPatientDetails(p);
+		m.addAttribute("success", "Successfully Sent");
+
 	}
 
 	/* This method helps to list the patient details */
@@ -298,7 +325,7 @@ public class HealthAppController {
 	@PostMapping("/updatePatientDetails/{id}")
 	public ModelAndView saveUpdatePatientDetails(@PathVariable("id") int id, @ModelAttribute PatientDetails p,
 			@RequestParam("submit") String submit) {
-		
+
 		ModelAndView view = new ModelAndView("/list");
 		if (submit.equals("Cancel")) {
 			view.addObject("p", ps.getAllPatientDetails());
@@ -392,7 +419,7 @@ public class HealthAppController {
 	@GetMapping("/doctordashboard/{id}")
 	public String createnew(@PathVariable("id") int id, ModelMap model) {
 		ModelAndView view = new ModelAndView("doctordashboard");
-		DoctorUser u = dus.getUsername(id);
+		User u = us.getUsername(id);
 		// System.out.println(u);
 		model.addAttribute("add", u.getName());
 
@@ -456,29 +483,27 @@ public class HealthAppController {
 
 	/* This method helps to update the doctor comments */
 	@PostMapping("/forgotpassword")
-	public String saveNewPassword(@RequestParam("email") String email,Model model,@ModelAttribute UserModel userModel,
+	public String saveNewPassword(@RequestParam("email") String email, Model model, @ModelAttribute UserModel userModel,
 			@RequestParam("submit") String submit) {
-		
-		User u=us.findByEmail(email);
+
+		User u = us.findByEmail(email);
 		if (u == null) {
 			model.addAttribute("error", "Invalid Email");
 			return "forgotpassword";
 		}
 
 		if (userModel.getPassword().equals(userModel.getConfirmpassword())) {
-			String password=userModel.getPassword();
-			String confirmpassword=userModel.getConfirmpassword();
-			us.changePassword(u,password,confirmpassword);
+			String password = userModel.getPassword();
+			String confirmpassword = userModel.getConfirmpassword();
+			us.changePassword(u, password, confirmpassword);
 			return "login";
 
 		} else {
 			model.addAttribute("error", "Password and Confirm Password doesnot match");
 			return "forgotpassword";
 		}
-	
+
 	}
-	
-	
 
 	/* This method helps to update the doctor comments */
 	@GetMapping("/forgotpassword")
@@ -488,7 +513,7 @@ public class HealthAppController {
 	}
 
 	/* Comment List */
-	@GetMapping("/commentlist") //staff
+	@GetMapping("/commentlist") // staff
 	public String Comments(Model model) {
 		model.addAttribute("d", ds.getAllDoctorComments());
 		return "commentlist";
