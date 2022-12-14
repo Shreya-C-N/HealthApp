@@ -22,6 +22,6 @@ public class HealthAppApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMail() throws MessagingException {
-		senderService.sendSimpleEmail("shreyasonu25@gmail.com", "Emergency Come Online", "Hello Doctor, the patient is ready please come online");
+		senderService.sendSimpleEmail("itsajayrawal2000@gmail.com", "Emergency Come Online", "Hello Doctor, the patient is ready please come online");
 	}
 }
