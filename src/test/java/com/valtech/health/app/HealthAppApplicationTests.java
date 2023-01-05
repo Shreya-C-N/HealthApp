@@ -79,13 +79,6 @@ class HealthAppApplicationTests {
 		mvc.perform(get("/doctor")).andExpect(status().isOk());
 	}
 
-	/* Testing for nurse list page 
-	@Test
-	@WithAnonymousUser
-	void testListWithAnonymous() throws Exception {
-		mvc.perform(get("/list")).andExpect(status().isOk());
-	}*/
-
 	/* Testing for doctor list page */
 	@Test
 	@WithAnonymousUser
