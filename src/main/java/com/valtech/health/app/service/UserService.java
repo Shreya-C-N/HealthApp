@@ -47,6 +47,8 @@ public interface UserService {
 
 	int getId(String username);
 
+	User findById(int id);
+
 
 
 

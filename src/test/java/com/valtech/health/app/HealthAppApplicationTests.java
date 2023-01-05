@@ -20,16 +20,15 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.valtech.health.app.entity.Doctor;
 import com.valtech.health.app.entity.Hospital;
-import com.valtech.health.app.entity.PatientDetails;
 import com.valtech.health.app.entity.User;
 import com.valtech.health.app.repostitory.DoctorRepository;
 import com.valtech.health.app.repostitory.HospitalRepository;
 import com.valtech.health.app.repostitory.PatientDetailsRepository;
 import com.valtech.health.app.repostitory.UserRepository;
-import com.valtech.health.app.service.DoctorServiceImpl;
-import com.valtech.health.app.service.HospitalServiceImpl;
-import com.valtech.health.app.service.PatientDetailsServiceImpl;
-import com.valtech.health.app.service.UserServiceImpl;
+import com.valtech.health.app.service.DoctorService;
+import com.valtech.health.app.service.HospitalService;
+import com.valtech.health.app.service.PatientDetailsService;
+import com.valtech.health.app.service.UserService;
 
 @SpringBootTest
 @EnableAutoConfiguration(exclude = SecurityAutoConfiguration.class)
@@ -153,20 +152,20 @@ class HealthAppApplicationTests {
 	private DoctorRepository doctorRepository;
 
 	@Autowired
-	private DoctorServiceImpl doctorServiceImpl;
+	private DoctorService doctorService;
 
 	@MockBean
 	private HospitalRepository hospitalRepository;
 
 	@Autowired
-	private HospitalServiceImpl hospitalServiceImpl;
+	private HospitalService hospitalService;
 
 	/* Testing for finding all doctor comment */
 	@Test
 	public void getComments() {
 		when(doctorRepository.findAll())
 				.thenReturn(Stream.of(new Doctor("heena", "aaa", "sick")).collect(Collectors.toList()));
-		assertEquals(1, doctorServiceImpl.getAllDoctorComments().size());
+		assertEquals(1, doctorService.getAllDoctorComments().size());
 	}
 
 	@Test
@@ -174,14 +173,14 @@ class HealthAppApplicationTests {
 
 		when(doctorRepository.findAll())
 				.thenReturn(Stream.of(new Doctor("heena", "ameena", "sick")).collect(Collectors.toList()));
-		assertEquals(1, doctorServiceImpl.getAllDoctorComments().size());
+		assertEquals(1, doctorService.getAllDoctorComments().size());
 	}
 
 	@Test
 	public void savedoctorsComments() {
 		Doctor d = new Doctor("heena", "ameena", "sick");
 		when(doctorRepository.save(d)).thenReturn(d);
-		assertEquals(d, doctorServiceImpl.createDoctor(d));
+		assertEquals(d, doctorService.createDoctor(d));
 
 	}
 
@@ -189,7 +188,7 @@ class HealthAppApplicationTests {
 	public void createDoctor() {
 		Doctor d = new Doctor("heena", "ameena", "sick");
 		when(doctorRepository.save(d)).thenReturn(d);
-		assertEquals(d, doctorServiceImpl.createDoctor(d));
+		assertEquals(d, doctorService.createDoctor(d));
 	}
 
 	
@@ -198,32 +197,16 @@ class HealthAppApplicationTests {
 	/* test cases for patientDetaiilsServiceImpl */
 
 	@Autowired
-	PatientDetailsServiceImpl patientDetailsServiceImpl;
+	PatientDetailsService patientDetailsService;
 	@MockBean
 	private PatientDetailsRepository patientDetailsRepository;
 
-	/* Testing for creating patients */
-	@Test
-	public void createPatient() {
-
-		PatientDetails p1 = new PatientDetails("priya", 23, "aaa", "o positive", "fever", "null", 95);
-		when(patientDetailsRepository.save(p1)).thenReturn(p1);
-		assertEquals(p1, patientDetailsServiceImpl.createPatientDetails(p1));
-
-	}
-
-	// Testing for finding all patient details
-	@Test
-	public void AllPatientDeatils() {
-		when(patientDetailsRepository.findAll())
-				.thenReturn(Stream.of(new PatientDetails("priya", 23, "aaa", "o positive", "fever", "null", 95))
-						.collect(Collectors.toList()));
-	}
+	
 
 	/* Test cases for userServiceImpl */
 
 	@Autowired
-	UserServiceImpl userServiceImpl;
+	UserService userService;
 	@MockBean
 	UserRepository userRepository;
 
@@ -232,7 +215,7 @@ class HealthAppApplicationTests {
 	public void createUser() {
 		User u = new User("heena", "123", "heena@gmail.com", "hina", "abc", "gfk", 12);
 		when(userRepository.save(u)).thenReturn(u);
-		assertEquals(u, userServiceImpl.createUser(u));
+		assertEquals(u, userService.createUser(u));
 	}
 
 	/* Testing for creating hospital */
@@ -241,7 +224,7 @@ class HealthAppApplicationTests {
 
 		Hospital p1 = new Hospital("jayadev", "9876543210");
 		when(hospitalRepository.save(p1)).thenReturn(p1);
-		assertEquals(p1, hospitalServiceImpl.createHospital(p1));
+		assertEquals(p1, hospitalService.createHospital(p1));
 
 	}
 

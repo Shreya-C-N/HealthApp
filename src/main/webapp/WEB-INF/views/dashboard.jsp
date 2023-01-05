@@ -177,14 +177,7 @@ h1 form {
 			</br>
 
 
-			<form action="/list" method="get">
-				<!-- <input type="submit" name="submit" value="DOCTOR" class="btn btn-secondary btn-lg" style="background-color: cornflowerblue"/><br/> -->
-				<button type="submit" name="submit" value="PATIENT'S DETAILS"
-					class="btn btn-secondary btn-lg">
-					<span></span>PATIENT'S DETAILS
-				</button>
-				<br>
-			</form>
+			
 			</br> <br />
 			<br />
 			</form>

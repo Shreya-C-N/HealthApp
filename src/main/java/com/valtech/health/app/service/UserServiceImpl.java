@@ -88,13 +88,6 @@ public class UserServiceImpl implements UserService {
 		return userRepository.findAll();
 	}
 	
-	/*@Override
-	public List<User> getAllDoctorUsers(User u) {
-		if(u.getRole().equals("DOCTOR"))
-			return userRepository.findAll();
-		
-	}*/
-	
 
 	@Override
 	public void setOtp(User u, int otp) {
@@ -124,6 +117,11 @@ public class UserServiceImpl implements UserService {
 	public int getId(String username) {
 		User u = userRepository.findByUsername(username);
 		return u.getId();
+	}
+
+	@Override
+	public User findById(int id) {
+		return userRepository.findById(id);
 	}
 	
 	

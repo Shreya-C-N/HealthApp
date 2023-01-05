@@ -9,13 +9,16 @@ import com.valtech.health.app.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-	/* This method finds nurse by email */
+	/* This method finds user by email */
 	User findByEmail(String email);
+	
+	/* This method finds user by id */
+	User findById(int id);
 
-	/* This method finds nurse by user name */
+	/* This method finds user by user name */
 	User findByUsername(String username);
 
-	/* This method finds nurse by password */
+	/* This method finds user by password */
 	User findByPassword(String password);
 
 	/* This method retrieves user name by id */
@@ -24,11 +27,11 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	/* This method retrieves user name by id */
 	User findIdByUsername(String username);
 
+	/* This method finds user by name */
 	User findByName(String name);
 
+	/* This method finds user by otp */
 	User findByOtp(int otp);
 
-	/* @Query(value = "SELECT u FROM User u WHERE u.getRole=DOCTOR ")
-	   public List<User> findAllDoctors();*/
 	
 }

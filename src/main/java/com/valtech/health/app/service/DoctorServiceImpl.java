@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.valtech.health.app.dao.DoctorDao;
 import com.valtech.health.app.entity.Doctor;
 import com.valtech.health.app.repostitory.DoctorRepository;
 
@@ -15,8 +16,8 @@ public class DoctorServiceImpl implements DoctorService {
 	@Autowired
 	private DoctorRepository doctorRepository;
 	
-	  @Autowired
-   private JdbcTemplate jdbcTemplate;
+	@Autowired
+	private DoctorDao doctorDao;
 
 	/* This method creates Doctor Comments */
 	@Override
@@ -38,6 +39,7 @@ public class DoctorServiceImpl implements DoctorService {
 		return doctorRepository.getReferenceById(id);
 
 	}
+
 	/* This method finds Doctor Comments by their name */
 	@Override
 	public Doctor findByNursename(String nursename) {
@@ -45,16 +47,13 @@ public class DoctorServiceImpl implements DoctorService {
 		return doctorRepository.findByNursename(nursename);
 	}
 	/* This method updates all the Doctor Comments */
-	/*@Override
-	public Doctor updateDoctorComments(Doctor d) {
-		// TODO Auto-generated method stub
-		return doctorRepository.save(d);
-	}*/
-	
-	@Override
-    public void updateDoctorComments(String doctor_comments, int id) {
-        String sql = "update doctor set doctor_comments= ? where id= ?";
-        jdbcTemplate.update(sql,doctor_comments,id);
-    }
+	/*
+	 * @Override public Doctor updateDoctorComments(Doctor d) { // TODO
+	 * Auto-generated method stub return doctorRepository.save(d); }
+	 */
 
+	@Override
+	public void updateDoctorComments(String doctor_comments, int id) {
+		doctorDao.updateDoctorCommentsDao(doctor_comments, id);
+	}
 }

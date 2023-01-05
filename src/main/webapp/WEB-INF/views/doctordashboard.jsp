@@ -244,7 +244,7 @@ form .pass-link a:hover, form .signup-link a:hover {
 
 					<h1 class="display-4">Welcome ${add} !</h1>
 
-					<form action="/list" method="get">
+					<form action="/list/${docid}" method="get">
 						<div class="field">
 							<input name="submit" value="PATIENT'S DETAILS" type="submit" />
 						</div>
