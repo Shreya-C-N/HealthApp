@@ -15,8 +15,8 @@ Please find the below Listed documents within the directory named "DOCUMENTATION
 1) Coding Standards Followed
 2) Health App Documentation- Main Project Documentation
 3) Individual Contribution
-4) Issue Tracker
-5) Jenkins Documentation
+4) Jenkins Documentation
+5) Issue Tracker
 6) PBI - Jira
 7) Retrospection
 
