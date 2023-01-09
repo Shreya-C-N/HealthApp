@@ -20,6 +20,7 @@ Please find the below Listed documents within the directory named "DOCUMENTATION
 6) PBI - Jira
 7) Retrospection
 8) Tomcat Deployment Documentation
+9) DB Design and Scripts
 
 ******************************************************************
 For credentials of the users/roles ie 
